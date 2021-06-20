@@ -1,0 +1,165 @@
+/* Global rules */
+
+html {
+    background-color: #78675b;
+    font-family: "Courier New",  "Monaco", "Lucida Console", monospace;
+    line-height: 1.5em;
+}
+
+::selection {
+    background: #170f0c; 
+    color: #EBF5EE;
+}
+
+h1 {
+    color: #170f0c;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+    line-height: 2.5em;
+    font-size: 2.5em;
+    padding-left: 1%;
+}
+
+h2, h3 {
+    color: #170f0c;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1em;
+    font-size: 2em;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+p {
+    color: #170f0c;
+    font-size: 1em;
+    margin: 0 1em 1.5em 0;
+}
+
+a {
+    color:#170f0c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #170f0c;
+    background-color: #EBF5EE;
+    text-decoration: none;
+}
+
+img {
+    margin: 0 3% 2% 0;
+    width: 300px;
+    float: left;
+
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+.wrapper {
+    background-color: #e3dacc;
+    overflow: auto;
+    margin: auto;
+}
+
+.content {
+    padding: 0 5%;
+}
+
+.footer {
+    padding: 0;
+}
+
+.txt {
+    padding-bottom: 10%;
+}
+
+.contact {
+    text-align: center; 
+    padding-bottom: 10%;
+    overflow: auto;
+}
+
+figure {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+    float: none;
+    text-align: center;
+    width: 100px;
+    padding: 1%;
+}
+
+/* RESPONSIVE RULES */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    div.wrapper {
+        width: 80%;
+    }
+    
+    
+    h1 {
+        width: 79%;
+    }
+    
+    .contact {
+        margin: 0 30%;
+    }
+    
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    div.wrapper {
+        width: 90%;
+    }
+    
+    h1 {
+        width: 89%;
+    }
+    
+    .contact {
+        margin: 0 10%;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    div.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+    }
+    
+}
+
+/* font awesome icon styles */
+i.logo {
+    color:darkred; /* a less boring color */
+    text-shadow:1px 1px #ccc; /* gives the icon a little depth */
+    font-size:1.25em; /* font awesome icons are text, so make it a bit bigger */
+    margin-left:1%; /* this keeps the icon from being squeeezed to the left */
+}
+
+/* Change background color of navigation on selected page */
+           ul.topnav li a.selected {
+        		background-color: #ccc;
+        		color:#000;
+   }
